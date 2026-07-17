@@ -1,0 +1,60 @@
+# Arduino LED Blink Project
+
+## Overview
+This project demonstrates the basic operation of an Arduino Uno by blinking an LED at one-second intervals. It is one of the fundamental projects for learning Arduino programming and digital output control.
+
+## Components Required
+- Arduino Uno R3
+- LED
+- 220 Ω Resistor
+- Jumper Wires
+
+## Circuit Connections
+| Arduino Pin | Component |
+|-------------|-----------|
+| Digital Pin 13 | LED Anode (+) |
+| GND | LED Cathode (-) through a 220 Ω resistor |
+
+## Arduino Code
+
+```cpp
+void setup()
+{
+  pinMode(13, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000);
+
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+```
+
+## Working Principle
+- The LED connected to digital pin 13 is configured as an output.
+- The LED turns ON for 1 second.
+- The LED turns OFF for 1 second.
+- This process repeats continuously, creating a blinking effect.
+
+## Output
+The LED blinks repeatedly with a delay of one second between the ON and OFF states.
+
+## Software Used
+- Arduino IDE
+- Tinkercad Circuits
+
+## Repository Structure
+
+```
+Arduino-LED-Blink/
+│── Arduino-LED-Blink.ino
+│── README.md
+└── circuit.png
+```
+
+## Author
+**Sona Catherine**
+B.Tech Electronics and Communication Engineering (ECE)
